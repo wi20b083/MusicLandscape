@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="" />
+    <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +110,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\tests" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
       <recent name="C:\Users\FH\Documents\oopl\vorbereitung_test\src\MusicLandscape\tests" />
     </key>
   </component>
@@ -115,13 +127,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,6 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624823582486</updated>
       <workItem from="1624823584055" duration="4317000" />
+      <workItem from="1624868366557" duration="1953000" />
     </task>
     <servers />
   </component>
@@ -197,6 +212,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
