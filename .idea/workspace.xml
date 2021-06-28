@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,9 +102,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MusicLandscape/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MusicLandscape/entities" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -107,12 +113,17 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2864807" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\entities" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\tests" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
       <recent name="C:\Users\FH\Documents\oopl\vorbereitung_test\src\MusicLandscape\tests" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="MusicLandscape" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.MusicLandscape.tests">
@@ -160,7 +171,7 @@
       <module name="MusicLandscape" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="PATTERN" value="MusicLandscape.entities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624823582486</updated>
       <workItem from="1624823584055" duration="4317000" />
-      <workItem from="1624868366557" duration="1953000" />
+      <workItem from="1624868366557" duration="11007000" />
     </task>
     <servers />
   </component>

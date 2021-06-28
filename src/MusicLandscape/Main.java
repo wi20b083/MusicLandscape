@@ -2,7 +2,7 @@ package MusicLandscape;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 	// write your code here
     }
 }
