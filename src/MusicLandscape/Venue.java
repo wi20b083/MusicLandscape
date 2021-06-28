@@ -2,7 +2,7 @@
 //		
 //       git.rev = 234
 //  git.revision = fdd4980be270473bdd7e8206afeda65ab6e4c3a4
-//         stage = ES02
+//         stage = ES03
 //
 // ***************************************************
 package MusicLandscape;
@@ -11,7 +11,7 @@ package MusicLandscape;
  * 
  * @author TeM
  * @version 234
- * @Stage ES02
+ * @Stage ES03
  * @ProgrammingProblem.Category simple entity classes
  * @ProgrammingProblem.Introduced ExerciseSheet02 (provided)
  */
@@ -37,7 +37,7 @@ public class Venue {
 	 * 
 	 */
 	public int getCapacity() {
-		return capacity;
+		return this.capacity;
 	}
 	/**
 	 * creates a default venue
@@ -59,7 +59,7 @@ public class Venue {
 	 *            to set
 	 * 
 	 */
-	public void setCapacity(int capacity) {
+	public void setCapacity(final int capacity) {
 		if (capacity < 0)
 			return;
 		this.capacity = capacity;
@@ -72,19 +72,31 @@ public class Venue {
 	 */
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	/**
 	 * set the name of this venue
 	 * @param name the name to set
 	 */
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 	
 	/**************** ES 03 ***********************/
 
+	
+	/**
+	 * creates a copy of a venue
+	 * @param v the original venue to copied
+	 * @ProgrammingProblem.Aspect copy constructor 
+     * @ProgrammingProblem.Introduced ExerciseSheet03
+	 */
+	public Venue(final Venue v){
+		if (v==null)return;
+        name = v.name;
+        capacity = v.capacity;
+	}
 	
 
 }
