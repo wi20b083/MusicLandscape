@@ -6,10 +6,10 @@ public class Concert extends Event {
 
     public Concert(){}
 
-    public boolean addTrack(final Track t) {
+    public boolean addTrack(Track t) {
         if (t == null) return false;
-        final int newLength = (this.setList == null) ? 1 : this.setList.length + 1;
-        final Track[] tempTracks = new Track[newLength];
+        int newLength = (this.setList == null) ? 1 : this.setList.length + 1;
+        Track[] tempTracks = new Track[newLength];
         if (this.setList != null) {
             System.arraycopy(this.setList, 0, tempTracks, 0, this.setList.length);
             tempTracks[this.setList.length] = t;
@@ -23,7 +23,7 @@ public class Concert extends Event {
     public int duration(){
         if(this.setList == null) return 0;
         int d = 0;
-        for (final Track track : this.setList) {
+        for (Track track : this.setList) {
             d += track.getDuration();
         }
         return d;
@@ -34,12 +34,12 @@ public class Concert extends Event {
         this.nextIdx = 0;
     }
 
-    public void setSetList(final Track[] setList) {
+    public void setSetList(Track[] setList) {
         int newLength = 0;
-        for (final Track t : setList) if (t != null) newLength++;
-        final Track[] tempTracks = new Track[newLength];
+        for (Track t : setList) if (t != null) newLength++;
+        Track[] tempTracks = new Track[newLength];
         int position = 0;
-        for (final Track t : setList) {
+        for (Track t : setList) {
             if (t != null) {
                 tempTracks[position] = new Track(t);
                 position++;
@@ -48,9 +48,9 @@ public class Concert extends Event {
         this.setList = tempTracks;
     }
 
-    private void ensureCapacity(final int length){
+    private void ensureCapacity(int length){
         if(this.setList.length < length){
-         final Track[] tmp = new Track[length];
+         Track[] tmp = new Track[length];
             for(int i = 0; i <= this.setList.length; i++){
                 tmp[i].setDuration(this.setList[i].getDuration());
                 tmp[i].setPerformer(this.setList[i].getPerformer());
@@ -76,20 +76,20 @@ public class Concert extends Event {
 
     @Override
     public int impact(){
-        if(setList == null) return 0;
-        final int durationFactor = 1 + this.duration() / 30 / 60;
+        if(this.setList == null) return 0;
+        int durationFactor = 1 + this.duration() / 30 / 60;
         return durationFactor * this.getAttendees();
     }
 
     @Override
     public String toString(){
-    final String tmp = super.toString();
+    String tmp = super.toString();
         return String.format("%s\n%d tracks played, total duration %02d:%02d.", tmp,
                 (this.setList.length == 0 ) ? 0 : this.setList.length, this.duration()/3600, (this.duration() / 60) % 60);
     }
 
     public int nrTracks() {
-        if (setList == null) return 0;
+        if (this.setList == null) return 0;
         int sum = -1;
         for(int i = 0; i <= this.setList.length; i++){
             sum++;

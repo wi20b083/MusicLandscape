@@ -37,7 +37,7 @@ public class Venue {
 	 * 
 	 */
 	public int getCapacity() {
-		return this.capacity;
+		return capacity;
 	}
 	/**
 	 * creates a default venue
@@ -59,7 +59,7 @@ public class Venue {
 	 *            to set
 	 * 
 	 */
-	public void setCapacity(final int capacity) {
+	public void setCapacity(int capacity) {
 		if (capacity < 0)
 			return;
 		this.capacity = capacity;
@@ -72,14 +72,14 @@ public class Venue {
 	 */
 
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
 	/**
 	 * set the name of this venue
 	 * @param name the name to set
 	 */
-	public void setName(final String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -92,10 +92,10 @@ public class Venue {
 	 * @ProgrammingProblem.Aspect copy constructor 
      * @ProgrammingProblem.Introduced ExerciseSheet03
 	 */
-	public Venue(final Venue v){
+	public Venue(Venue v){
 		if (v==null)return;
-        name = v.name;
-        capacity = v.capacity;
+		this.name = v.name;
+		this.capacity = v.capacity;
 	}
 	
 

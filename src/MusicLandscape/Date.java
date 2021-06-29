@@ -29,11 +29,11 @@ public class Date implements  Comparable<Date>
 	 * 
 	 * @param date the date to copy
 	 */
-	public Date(final Date date) {
+	public Date(Date date) {
 		if(date==null)return;
-		this.y = date.y;
-		this.m = date.m;
-		this.d = date.d;
+		y = date.y;
+		m = date.m;
+		d = date.d;
 	}
 
 	/**
@@ -41,9 +41,9 @@ public class Date implements  Comparable<Date>
 	 * 
 	 */
 	public Date() {
-		this.y =1970;
-		this.m =01;
-		this.d =01;
+		y =1970;
+		m =01;
+		d =01;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class Date implements  Comparable<Date>
 	 * @return the year of this date
 	 */
 	public int getYear() {
-		return this.y;
+		return y;
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class Date implements  Comparable<Date>
 	 * @return the day of this date
 	 */
 	public int getDay() {
-		return this.d;
+		return d;
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class Date implements  Comparable<Date>
 	 * @return the month of this date
 	 */
 	public int getMonth() {
-		return this.m;
+		return m;
 	}
 
 	/**
@@ -75,7 +75,7 @@ public class Date implements  Comparable<Date>
 	 * @return true if this date is in a leap year, false otherwise
 	 */
 	public boolean isLeap() {
-		return ((this.y % 4 == 0 && this.y % 100 != 0) || this.y % 400 == 0);
+		return ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0);
 	}
 
 	/**
@@ -87,10 +87,10 @@ public class Date implements  Comparable<Date>
 	 * @return the weekday of this date
 	 */
 	public int weekday() {
-		int yy = this.y;
-		int cc;
-		final int dd = this.d;
-		int mm = this.m;
+		int yy = y;
+		final int cc;
+		int dd = d;
+		int mm = m;
 
 		if (mm < 3) {
 			yy--;
@@ -98,12 +98,12 @@ public class Date implements  Comparable<Date>
 		} else {
 			mm -= 2;
 		}
-		final int mmm = mm;
+		int mmm = mm;
 
 		cc = yy / 100;
 		yy = yy % 100;
 
-		final int A = dd + (int) (2.6 * mmm - 0.2) + yy + (yy / 4) + (cc / 4) - 2
+		int A = dd + (int) (2.6 * mmm - 0.2) + yy + (yy / 4) + (cc / 4) - 2
 				* cc;
 		int W = A % 7;
 
@@ -118,8 +118,8 @@ public class Date implements  Comparable<Date>
 	 * @return a formatted String representing this date
 	 */
 	public String dateString() {
-		return String.format("%s, %s %d%s %d", this.dayName(this.weekday()),
-				this.monthName(this.m), this.d, this.numberEnding(), this.y);
+		return String.format("%s, %s %d%s %d", dayName(weekday()),
+				monthName(m), d, numberEnding(), y);
 	}
 
 	/**
@@ -127,11 +127,11 @@ public class Date implements  Comparable<Date>
 	 * @return the number ending of a the day of this date
 	 */
 	private String numberEnding() {
-		if (this.d % 10 == 1 && this.d != 11)
+		if (d % 10 == 1 && d != 11)
 			return "st";
-		if (this.d % 10 == 2 && this.d != 12)
+		if (d % 10 == 2 && d != 12)
 			return "nd";
-		if (this.d % 10 == 3 && this.d != 13)
+		if (d % 10 == 3 && d != 13)
 			return "rd";
 		return "th";
 	}
@@ -141,7 +141,7 @@ public class Date implements  Comparable<Date>
 	 * @param month the month for which the English name shall be calculated
 	 * @return the English name of a month 
 	 */
-	private String monthName(final int month) {
+	private String monthName(int month) {
 		switch (month) {
 		case 1:
 			return "January";
@@ -177,7 +177,7 @@ public class Date implements  Comparable<Date>
 	 * @param w the number of the day (as explained in weekday())
 	 * @return the English name of a day of the week
 	 */
-	private String dayName(final int w) {
+	private String dayName(int w) {
 		switch (w) {
 		case 0:
 			return "Sunday";
@@ -202,8 +202,8 @@ public class Date implements  Comparable<Date>
 	 * 
 	 * @param n the number of days to add to this date
 	 */
-	public void addDay(final int n) {
-		this.setJulian(this.julianDayNumber() + n);
+	public void addDay(int n) {
+		setJulian(julianDayNumber() + n);
 
 	}
 
@@ -211,8 +211,8 @@ public class Date implements  Comparable<Date>
 	 * 
 	 * @param i the number of months to add to this date
 	 */
-	public void addMonth(final int i) {
-		this.setJulian(Date.julianDayNumber(this.y, this.m + i, this.d));
+	public void addMonth(int i) {
+		setJulian(julianDayNumber(y, m + i, d));
 
 	}
 
@@ -220,8 +220,8 @@ public class Date implements  Comparable<Date>
 	 * 
 	 * @param i the number of year to add to this date
 	 */
-	public void addYear(final int i) {
-		this.setJulian(Date.julianDayNumber(this.y + i, this.m, this.d));
+	public void addYear(int i) {
+		setJulian(julianDayNumber(y + i, m, d));
 
 	}
 
@@ -238,13 +238,13 @@ public class Date implements  Comparable<Date>
 	 *            day
 	 * @return the Julian Day Number
 	 */
-	public static int julianDayNumber(int y, int m, final int d) {
+	public static int julianDayNumber(int y, int m, int d) {
 		y += m / 12;
 		m %= 12;
-		final int a = (14 - m) / 12;
-		final int yy = (y) + 4800 - a;
-		final int mm = m + 12 * a - 3;
-		final int jdn = d + (153 * mm + 2) / 5 + 365 * yy + yy / 4 - yy / 100 + yy
+		int a = (14 - m) / 12;
+		int yy = (y) + 4800 - a;
+		int mm = m + 12 * a - 3;
+		int jdn = d + (153 * mm + 2) / 5 + 365 * yy + yy / 4 - yy / 100 + yy
 				/ 400 - 32045;
 		return jdn;
 	}
@@ -255,7 +255,7 @@ public class Date implements  Comparable<Date>
 	 * 
 	 */
 	public int julianDayNumber() {
-		return Date.julianDayNumber(this.y, this.m, this.d);
+		return julianDayNumber(y, m, d);
 	}
 
 	/**
@@ -266,7 +266,7 @@ public class Date implements  Comparable<Date>
 	 * @return the Julian Day Number of the day specified by its Lilian Day
 	 *         Number
 	 */
-	public static int lil2jul(final int lil) {
+	public static int lil2jul(int lil) {
 		return lil + 2299160;
 	}
 
@@ -278,7 +278,7 @@ public class Date implements  Comparable<Date>
 	 * @return the Lilian Day Number of the day specified by its Julian Day
 	 *         Number
 	 */
-	public static int jul2lil(final int jul) {
+	public static int jul2lil(int jul) {
 		return jul - 2299160;
 	}
 
@@ -289,7 +289,7 @@ public class Date implements  Comparable<Date>
 
 	 */
 	public int lilianDayNumber() {
-		return Date.jul2lil(this.julianDayNumber());
+		return jul2lil(julianDayNumber());
 	}
 
 	/**
@@ -306,8 +306,8 @@ public class Date implements  Comparable<Date>
 	 *            day
 	 * @return the Lilian Day Number of the specified date
 	 */
-	public static int lilianDayNumber(final int y, final int m, final int d) {
-		return Date.jul2lil(Date.julianDayNumber(y, m, d));
+	public static int lilianDayNumber(int y, int m, int d) {
+		return jul2lil(julianDayNumber(y, m, d));
 	}
 
 	/**
@@ -317,25 +317,25 @@ public class Date implements  Comparable<Date>
 	 *            Julian Day Number
 	 */
 	public void setJulian(int jul) {
-		jul = Math.max(jul, Date.julianDayNumber(1582, 10, 15));
-		jul = Math.min(jul, Date.julianDayNumber(2199, 12, 31));
+		jul = Math.max(jul, julianDayNumber(1582, 10, 15));
+		jul = Math.min(jul, julianDayNumber(2199, 12, 31));
 
-		final int J = (int) Math.floor(jul + 0.5);
-		final int j = J + 32044;
-		final int g = j / 146097;
-		final int dg = j % 146097;
-		final int c = ((dg / 36524 + 1) * 3) / 4;
-		final int dc = dg - c * 36524;
-		final int b = dc / 1461;
-		final int db = dc % 1461;
-		final int a = ((db / 365 + 1) * 3) / 4;
-		final int da = db - a * 365;
-		final int y = g * 400 + c * 100 + b * 4 + a;
-		final int m = (da * 5 + 308) / 153 - 2;
-		final int d = da - ((m + 4) * 153) / 5 + 122;
-		final int Y = y - 4800 + (m + 2) / 12;
-		final int M = (m + 2) % 12 + 1;
-		final int D = d + 1;
+		int J = (int) Math.floor(jul + 0.5);
+		int j = J + 32044;
+		int g = j / 146097;
+		int dg = j % 146097;
+		int c = ((dg / 36524 + 1) * 3) / 4;
+		int dc = dg - c * 36524;
+		int b = dc / 1461;
+		int db = dc % 1461;
+		int a = ((db / 365 + 1) * 3) / 4;
+		int da = db - a * 365;
+		int y = g * 400 + c * 100 + b * 4 + a;
+		int m = (da * 5 + 308) / 153 - 2;
+		int d = da - ((m + 4) * 153) / 5 + 122;
+		int Y = y - 4800 + (m + 2) / 12;
+		int M = (m + 2) % 12 + 1;
+		int D = d + 1;
 		this.d = D;
 		this.m = M;
 		this.y = Y;
@@ -355,7 +355,7 @@ public class Date implements  Comparable<Date>
 	 * @return a formatted String representing this date
 	 */
 	public String numericString() {
-		return String.format("%02d.%02d.%04d", this.d, this.m, this.y);
+		return String.format("%02d.%02d.%04d", d, m, y);
 	}
 
 	/**
@@ -366,8 +366,8 @@ public class Date implements  Comparable<Date>
 	 * @return a measure of the distance between this date and another date
 	 */
 	@Override
-	public int compareTo(final Date d) {
-		return this.lilianDayNumber() - d.lilianDayNumber();
+	public int compareTo(Date d) {
+		return lilianDayNumber() - d.lilianDayNumber();
 	}
 
 	/**
@@ -376,25 +376,25 @@ public class Date implements  Comparable<Date>
 	 */
 	
 	public boolean scan() {
-		final Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("enter date (y m d)");
-		final int y = Integer.parseInt(sc.nextLine());
-		final int m = Integer.parseInt(sc.nextLine());
-		final int d = Integer.parseInt(sc.nextLine());
-		if (Date.julianDayNumber(y, m, d) > Date.julianDayNumber(2199, 12, 31))
+		int y = Integer.parseInt(sc.nextLine());
+		int m = Integer.parseInt(sc.nextLine());
+		int d = Integer.parseInt(sc.nextLine());
+		if (julianDayNumber(y, m, d) > julianDayNumber(2199, 12, 31))
 			return false;
-		if (Date.julianDayNumber(y, m, d) < Date.julianDayNumber(1582, 10, 15))
+		if (julianDayNumber(y, m, d) < julianDayNumber(1582, 10, 15))
 			return false;
 
-		this.setJulian(Date.julianDayNumber(y, m, d));
+		setJulian(julianDayNumber(y, m, d));
 		sc.close();
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("%02d.%02d.%04d", this.d, this.m, this.y);
+		return String.format("%02d.%02d.%04d", d, m, y);
 	}
 
 }

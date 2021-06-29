@@ -3,23 +3,23 @@ package MusicLandscape.entities;
 public class Artist {
     private String name;
 
-    public Artist(final Artist a){
+    public Artist(Artist a){
         if(a == null) return;
-        name = a.name;
+        this.name = a.name;
     }
 
     public Artist(){
     }
 
-    public Artist(final String name){
+    public Artist(String name){
         this.name = name;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
-    public void setName(final String name) {
+    public void setName(String name) {
         if (!(name == null || name.trim().equals("")))
         this.name = name;
     }

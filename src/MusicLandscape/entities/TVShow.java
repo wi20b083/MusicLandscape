@@ -6,19 +6,19 @@ public class TVShow extends Event {
 
     public TVShow (){}
 
-    public TVShow (final Event e){
+    public TVShow (Event e){
         super(e);
     }
 
-    public TVShow (final TVShow tvs){
+    public TVShow (TVShow tvs){
         super(tvs);
-        this.setName(tvs.name);
-        this.setViewers(tvs.viewers);
+        setName(tvs.name);
+        setViewers(tvs.viewers);
     }
 
     @Override
     public int impact(){
-    return ((this.viewers + this.getAttendees()) * 2);
+    return ((viewers + getAttendees()) * 2);
     }
 
     @Override
@@ -27,24 +27,24 @@ public class TVShow extends Event {
                         %s @ %s on %s
                         %s
                         (%d attending (%d))""",
-                this.getArtist(), this.getName(), this.getDate(),
-                this.getDescription(),(this.getViewers()+ this.getAttendees()), this.impact());
+                getArtist(), getName(), getDate(),
+                getDescription(),(getViewers()+ getAttendees()), impact());
     }
 
     public int getViewers() {
-        return this.viewers;
+        return viewers;
     }
 
-    public void setViewers(final int viewers) {
+    public void setViewers(int viewers) {
         if( viewers >= 0)
         this.viewers = viewers;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
-    public void setName(final String name) {
+    public void setName(String name) {
         if(!(name == null || name.isBlank()))
         this.name = name;
     }

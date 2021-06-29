@@ -13,7 +13,7 @@ public class Event {
     public Event() {
     }
 
-    public Event(final Event e) {
+    public Event(Event e) {
         artist = new Artist(e.artist);
         attendees = e.attendees;
         date = new Date(e.date);
@@ -29,7 +29,7 @@ public class Event {
         return this.artist;
     }
 
-    public void setArtist(final Artist artist) {
+    public void setArtist(Artist artist) {
         if (artist != null)
             this.artist = artist;
     }
@@ -38,7 +38,7 @@ public class Event {
         return this.venue;
     }
 
-    public void setVenue(final Venue venue) {
+    public void setVenue(Venue venue) {
         this.venue = venue;
     }
 
@@ -49,7 +49,7 @@ public class Event {
             return new Date(this.date);
     }
 
-    public void setDate(final Date date) {
+    public void setDate(Date date) {
         if (date == null)
             this.date = null;
         else
@@ -60,7 +60,7 @@ public class Event {
         return this.attendees;
     }
 
-    public void setAttendees(final int attendees) {
+    public void setAttendees(int attendees) {
         if (attendees >= 0)
             this.attendees = attendees;
     }
@@ -69,7 +69,7 @@ public class Event {
         return this.description;
     }
 
-    public void setDescription(final String description) {
+    public void setDescription(String description) {
         if (description != null)
             this.description = description;
     }

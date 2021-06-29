@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +109,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MusicLandscape/entities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MusicLandscape/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -114,11 +118,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2864807" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\entities" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\tests" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\entities" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
       <recent name="C:\Users\FH\Documents\oopl\vorbereitung_test\src\MusicLandscape\tests" />
     </key>
@@ -138,15 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,7 +209,8 @@
       <option name="presentableId" value="Default" />
       <updated>1624823582486</updated>
       <workItem from="1624823584055" duration="4317000" />
-      <workItem from="1624868366557" duration="11007000" />
+      <workItem from="1624868366557" duration="11359000" />
+      <workItem from="1624954471793" duration="812000" />
     </task>
     <servers />
   </component>

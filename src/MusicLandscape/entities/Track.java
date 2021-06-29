@@ -12,78 +12,78 @@ public class Track {
     public  Track(){
     }
 
-    public Track(final String title){
-        this.setTitle(title);
+    public Track(String title){
+        setTitle(title);
     }
 
-  public Track(final Track t){
-      title =  t.title;
-      year = t.year;
-      duration = t.duration;
-      performer = new Artist(t.performer);
-      writer = new Artist(t.writer);
+  public Track(Track t){
+      this.title =  t.title;
+      this.year = t.year;
+      this.duration = t.duration;
+      this.performer = new Artist(t.performer);
+      this.writer = new Artist(t.writer);
     }
 
     public String getTitle() {
-        return Objects.requireNonNullElse(this.title, "unknown title");
+        return Objects.requireNonNullElse(title, "unknown title");
     }
 
-    public void setTitle(final String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
     public int getDuration() {
-        return this.duration;
+        return duration;
     }
 
-    public void setDuration(final int duration) {
+    public void setDuration(int duration) {
         if ( duration >= 0)
         this.duration = duration;
     }
 
     public int getYear() {
-        return this.year;
+        return year;
     }
 
-    public void setYear(final int year) {
+    public void setYear(int year) {
         if( year > 1899 && year < 3000)
         this.year = year;
     }
 
     public Artist getWriter() {
-        return writer;
+        return this.writer;
     }
 
-    public void setWriter(final Artist writer) {
+    public void setWriter(Artist writer) {
         if(writer != null)
         this.writer = writer;
     }
 
     public Artist getPerformer() {
-        return this.performer;
+        return performer;
     }
 
-    public void setPerformer(final Artist performer) {
+    public void setPerformer(Artist performer) {
         if(performer != null)
         this.performer = performer;
     }
 
     public boolean writerIsKnown() {
-        return !(writer == null || writer.getName() == null);
+        return !(this.writer == null || this.writer.getName() == null);
     }
 
     public String getString() {
         return String.format(
-                "%10s by %10s performed by %10s (%02d:%02d)",
-                (title == null) ? "unknown" : this.getTitle().substring(0,Math.min(10, this.getTitle().length())),
-                (writer == null || writer.getName() == null) ? "unknown" : this.getWriter().getName().substring(0,Math.min(10, this.getWriter().getName().length())),
-                (performer == null || performer.getName() == null) ? "unknown" : this.getPerformer().getName().substring(0,Math.min(10, this.getPerformer().getName().length())),
-                this.getDuration() / 60,
-                this.getDuration() % 60);
+                "%10.10s by %10.10s performed by %10.10s (%02d:%02d)",
+                (this.title == null) ? "unknown" : getTitle(),
+                (this.writer == null || this.writer.getName() == null) ? "unknown" : getWriter().getName(),
+                (this.performer == null || this.performer.getName() == null) ? "unknown" : getPerformer().getName(),
+                getDuration() / 60,
+                getDuration() % 60);
     }
 
     @Override
     public String toString(){
-        return this.getString();
+        return getString();
     }
 }
