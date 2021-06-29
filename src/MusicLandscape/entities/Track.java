@@ -1,8 +1,11 @@
 package MusicLandscape.entities;
 
-import java.util.Objects;
+import MusicLandscape.util.ConsoleScanable;
 
-public class Track {
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Track implements ConsoleScanable {
     private String title;
     private int duration;
     private int year = 1900;
@@ -86,4 +89,37 @@ public class Track {
     public String toString(){
         return getString();
     }
+
+    @Override
+    public boolean scan() {
+        Scanner sc = new Scanner(System.in);
+        String input;
+        String[] numbers;
+
+        while (true) {
+            System.out.println("enter title");
+            input = sc.nextLine();
+            if (!input.isBlank()) {
+                this.title = input;
+            }
+            break;
+        }
+        while(true) {
+            System.out.println("enter duration");
+            input = sc.nextLine();
+            if (input.isBlank()) break;
+            numbers = input.split(" ");
+
+            int newDuration = Integer.parseInt(numbers[numbers.length - 1]);
+            if (newDuration >= 0) {
+                this.duration = newDuration;
+                break;
+            } else {
+                System.out.println("error");
+            }
+        }
+        sc.close();
+        return true;
+    }
+
 }
