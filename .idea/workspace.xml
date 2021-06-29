@@ -5,21 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/MusicVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Release.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/AlbumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ConsoleScanableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MusicVideoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyCSVTrackFormatterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyEventAttendeesComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyEventComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyEventDateComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyTitleComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ReleaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/ConsoleScanable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyDurationComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyEventAttendeesComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyEventComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyEventDateComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyTitleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/comparators/MyTrackComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/formatters/MyCSVTrackFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/formatters/MyShortTrackFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/formatters/MyTrackFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/Venue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Concert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/TVShow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/entities/Track.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/ConcertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/EventTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TVShowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/TrackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +39,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/MusicLandscape/util/ConsoleScanable.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1uXt5sknAE8Wb7yhJvfwA59EuVG" />
   <component name="ProjectLevelVcsManager">
@@ -123,9 +137,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\tests" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util\formatters" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util\comparators" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\entities" />
       <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
-      <recent name="C:\Users\FH\Documents\oopl\vorbereitung_test\src\MusicLandscape\tests" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="MusicLandscape" />
@@ -170,6 +185,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyEventDateComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="MAIN_CLASS_NAME" value="MusicLandscape.tests.MyEventDateComparatorTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrackTest.setPerformerNull" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MusicLandscape" />
       <extension name="coverage">
@@ -192,10 +224,12 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="TestNG.MusicLandscape.tests" />
       <item itemvalue="TestNG.TrackTest.setPerformerNull" />
+      <item itemvalue="TestNG.MyEventDateComparatorTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MusicLandscape.tests" />
+        <item itemvalue="TestNG.MyEventDateComparatorTest" />
         <item itemvalue="TestNG.TrackTest.setPerformerNull" />
       </list>
     </recent_temporary>
@@ -210,7 +244,7 @@
       <updated>1624823582486</updated>
       <workItem from="1624823584055" duration="4317000" />
       <workItem from="1624868366557" duration="11359000" />
-      <workItem from="1624954471793" duration="812000" />
+      <workItem from="1624954471793" duration="14058000" />
     </task>
     <servers />
   </component>
