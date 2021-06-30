@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyTrackCSVReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/tests/MyWriterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/io/MyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/io/MyTrackCSVReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicLandscape/util/io/MyWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ArtistTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/DurationComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/DurationMatcherTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/MyTrackContainerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/ShortTrackFormatterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TitleComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/TitleMatcherTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/tests/WriterComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicLandscape/util/formatters/CSVTrackFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicLandscape/util/formatters/CSVTrackFormatter.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/MusicLandscape/util/ConsoleScanable.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1uXt5sknAE8Wb7yhJvfwA59EuVG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../musicLandscapeSupportFiles/musicLandscape6/ES06_provided" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2864807" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util\io" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\tests" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util\formatters" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape" />
+      <recent name="C:\Users\FH\Documents\oopl\MusicLandscape\src\MusicLandscape\util\io" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="MusicLandscape" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="MusicLandscape.util.matcher" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.MusicLandscape.tests">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MusicLandscape.tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTrackContainerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="MAIN_CLASS_NAME" value="MusicLandscape.tests.MyTrackContainerTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTrackContainerTest.remove" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="MAIN_CLASS_NAME" value="MusicLandscape.tests.MyTrackContainerTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTrackContainerTest.reset" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="MAIN_CLASS_NAME" value="MusicLandscape.tests.MyTrackContainerTest" />
+      <option name="METHOD_NAME" value="reset" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTrackContainerTest.selection" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MusicLandscape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MusicLandscape.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="MusicLandscape.tests" />
+      <option name="MAIN_CLASS_NAME" value="MusicLandscape.tests.MyTrackContainerTest" />
+      <option name="METHOD_NAME" value="selection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.MusicLandscape.tests" />
+      <item itemvalue="TestNG.MyTrackContainerTest.selection" />
+      <item itemvalue="TestNG.MyTrackContainerTest.remove" />
+      <item itemvalue="TestNG.MyTrackContainerTest.reset" />
+      <item itemvalue="TestNG.MyTrackContainerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MusicLandscape.tests" />
+        <item itemvalue="TestNG.MyTrackContainerTest" />
+        <item itemvalue="TestNG.MyTrackContainerTest.reset" />
+        <item itemvalue="TestNG.MyTrackContainerTest.remove" />
+        <item itemvalue="TestNG.MyTrackContainerTest.selection" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c63fbdfb-dc16-4dca-868a-bad5c12cf1f5" name="Default Changelist" comment="" />
+      <created>1624823582486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624823582486</updated>
+      <workItem from="1624823584055" duration="4317000" />
+      <workItem from="1624868366557" duration="11359000" />
+      <workItem from="1624954471793" duration="14058000" />
+      <workItem from="1625042361042" duration="11047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
