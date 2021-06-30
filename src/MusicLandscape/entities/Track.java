@@ -5,7 +5,7 @@ import MusicLandscape.util.ConsoleScanable;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Track implements ConsoleScanable {
+public class Track implements ConsoleScanable, Comparable<Track> {
     private String title;
     private int duration;
     private int year = 1900;
@@ -122,4 +122,8 @@ public class Track implements ConsoleScanable {
         return true;
     }
 
+    @Override
+    public int compareTo(Track o) {
+        return this.title.compareTo(o.title);
+    }
 }
