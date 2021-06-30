@@ -12,7 +12,7 @@ public class CSVTrackFormatter implements MyFormatter<Track> {
 
     @Override
     public String format(Track track) {
-        return String.format("%s,%s,%s,%d,%d",
+        return String.format("%s, %s, %s, %d, %d",
                 track.getTitle(),
                 track.getWriter().toString(),
                 track.getPerformer().toString(),
